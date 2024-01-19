@@ -1,0 +1,134 @@
+:root {
+	--main-color: #fda94f;
+	--heading-color: #292929;
+	--paragraph-color: #292929;
+	--heading-font: "Poppins", sans-serif;
+	--body-font: "Roboto", sans-serif;
+	--body-font-size: 16px;
+	--line-height30: 1.7;
+}
+#fundraisers-section {
+	background-image: url("/Assets/bg.png");
+	background-color: #ffffff;
+	background-position: -17px -3px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.change-yours {
+	color: #ffffff;
+	font-family: "Circe", Sans-serif;
+	font-size: 35px;
+	font-weight: 400;
+	line-height: 1.2em;
+	letter-spacing: -0.1px;
+	padding-bottom: 5rem;
+}
+.join-us {
+	color: #ffffff;
+	font-family: "Circe", Sans-serif;
+	font-size: 70px;
+	font-weight: 800;
+	padding: 0;
+
+	margin-left: 1rem;
+	line-height: 1;
+}
+#fundraisers-section h2 {
+	text-align: center;
+	color: #fd8f00;
+	text-transform: uppercase;
+}
+.donation {
+	font-family: "Circe", Sans-serif;
+	font-weight: 800;
+	line-height: 2em;
+	font-size: 16px;
+	padding: 35px 30px;
+	border-radius: 4px;
+	color: #ffffff;
+	letter-spacing: 1px;
+	background-color: #000000;
+	border-radius: 0px 0px 0px 0px;
+}
+
+.donation-btn {
+	margin-top: 20rem;
+	margin-left: 1rem;
+}
+
+.donation:hover {
+	padding: 45px 40px;
+}
+#fundraiser-section a:hover {
+	text-decoration: none;
+}
+.each-day {
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 800;
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+.Aniston-life {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 300;
+	width: 100%;
+}
+.fundraiser-card {
+	background-image: url("/Assets/fundraiser.webp");
+	background-position: -17px -3px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 10rem;
+}
+@media (max-width: 768px) {
+	#fundraisers-section {
+		background-position: center;
+		padding: 20px; /* Adjust padding as needed */
+	}
+
+	.change-yours {
+		font-size: 28px;
+		padding-bottom: 3rem;
+	}
+
+	.join-us {
+		font-size: 50px;
+		margin-left: 0;
+	}
+
+	#fundraisers-section h2 {
+		font-size: 24px;
+	}
+
+	.donation {
+		font-size: 14px;
+		padding: 25px 20px;
+	}
+
+	.donation-btn {
+		margin-top: 10rem;
+		margin-left: 0;
+	}
+
+	.donation:hover {
+		padding: 35px 30px;
+	}
+
+	.each-day {
+		font-size: 2rem;
+	}
+
+	.Aniston-life {
+		font-size: 1.5rem;
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.fundraiser-card {
+		padding-bottom: 5rem;
+	}
+}

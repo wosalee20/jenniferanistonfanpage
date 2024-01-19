@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Jennifer Aniston Fan Club</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/about.css" />
+		<link rel="stylesheet" href="css/header-text.css" />
+		<link rel="stylesheet" href="css/fancard.css" />
+		<link rel="stylesheet" href="css/fundraiser.css" />
+		<link rel="stylesheet" href="css/signup.css" />
+
+		<link rel="stylesheet" href="css/footer.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap"
+		/>
+	</head>
+	<body>
+		<header>
+			<h1 id="header-text">Jennifer Aniston Fan Club</h1>
+			<nav id="desktop-nav">
+				<div class="logo">
+					<img src="Assets/menu-logo.jpeg" alt="menu-logo" id="logo" />
+				</div>
+				<div class="nav-links">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li>
+							<a href="#FanCardSection">Fan Cards</a>
+						</li>
+						<li>
+							<a href="#fundraisers-section">Fundraisers</a>
+						</li>
+						<li>
+							<a href="pages/contact.html" id="contactLink">Contact</a>
+						</li>
+
+						<li><a href="pages/signup.html" id="signupLink">Signup</a></li>
+						<li><a href="pages/login.html" id="loginLink">Login</a></li>
+					</ul>
+				</div>
+			</nav>
+			<nav id="hamburger-nav">
+				<div class="logo">
+					<img src="Assets/menu-logo.jpeg" alt="menu-logo" id="logo" />
+				</div>
+				<div class="hamburger-menu">
+					<div class="hamburger-icon" onclick="toggleMenu()">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<ul class="menu-links">
+						<li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+						<li><a href="#about" onclick="toggleMenu()">About</a></li>
+						<li>
+							<a href="#FanCardSection" onclick="toggleMenu()">Fan Cards</a>
+						</li>
+						<li>
+							<a href="#fundraisers-section" onclick="toggleMenu()"
+								>Fundraisers</a
+							>
+						</li>
+						<li>
+							<a
+								href="pages/contact.html"
+								id="contactLink"
+								onclick="toggleMenu() "
+								>Contact</a
+							>
+						</li>
+
+						<li>
+							<a
+								href="pages/signup.html"
+								id="signupLink"
+								onclick="toggleMenu(),toggleLoginSection()"
+								>Signup</a
+							>
+						</li>
+						<li>
+							<a
+								href="pages/login.html"
+								id="loginLink"
+								onclick="toggleMenu(),toggleLoginSection()"
+								>Login</a
+							>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<section id="about" class="section">
+				<div
+					class="about-background"
+					style="background-image: url('Assets/about-main-bg.webp')"
+					id="jennifer-aniston"
+				>
+					<div class="d-flex flex-lg-row flex-sm-column about-content-center">
+						<div class="about-image-text">
+							<div class="about-image-text-wrapper">
+								<img src="Assets/about-main-jen.webp" />
+							</div>
+							<div class="full-name">
+								<div class="firstname"><span class="">jennifer</span></div>
+								<div class="lastname"><span class="">aniston</span></div>
+							</div>
+						</div>
+						<div class="about-content">
+							<div class="head">ABOUT</div>
+
+							<div class="about-content-wrapper">
+								<p></p>
+								<p>
+									I'm Jennifer Aniston, born on February 11, 1969, in Sherman
+									Oaks, Los Angeles, California. You might know me best as
+									Rachel Green from the beloved TV show "Friends," which ran
+									from 1994 to 2004. Growing up in a family connected to the
+									entertainment industry, with my dad being the actor John
+									Aniston, I always felt a deep love for performing.&nbsp;
+								</p>
+								<p>
+									After the "Friends" era, I ventured into the world of movies,
+									taking on roles in films like "Marley & Me," "The Break-Up,"
+									and "The Good Girl." I've also explored the world of producing
+									through my company, Echo Films, and had the chance to work on
+									some exciting projects.
+								</p>
+								<p>
+									One of the films I'm particularly proud of is "Cake," which
+									brought me nominations for a Golden Globe and a Screen Actors
+									Guild Award. It was a different kind of role for me, and I
+									enjoyed the challenge.
+								</p>
+								<p>
+									Beyond the spotlight, I've tried to balance my career with a
+									bit of privacy. It's important to me to stay grounded and true
+									to myself in an industry that can sometimes be overwhelming.
+									Thanks for the support over the years, and I'm excited for
+									what's to come!
+								</p>
+								<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mobile-about-background">
+					<div class="image">
+						<img src="Assets/about-main-bg.webp" alt="" class="image" />
+					</div>
+					<div class="mobile-about-content">
+						<div class="title">ABOUT</div>
+						<div class="content-image">
+							<div class="full-name">
+								<div class="firstname">jennifer</div>
+								<div class="lastname text-white">aniston</div>
+							</div>
+							<div class="line_middle"></div>
+
+							<div class="about-content-wrapper">
+								<p></p>
+								<p>
+									I'm Jennifer Aniston, born on February 11, 1969, in Sherman
+									Oaks, Los Angeles, California. You might know me best as
+									Rachel Green from the beloved TV show "Friends," which ran
+									from 1994 to 2004. Growing up in a family connected to the
+									entertainment industry, with my dad being the actor John
+									Aniston, I always felt a deep love for performing.&nbsp;
+								</p>
+								<p>
+									After the "Friends" era, I ventured into the world of movies,
+									taking on roles in films like "Marley & Me," "The Break-Up,"
+									and "The Good Girl." I've also explored the world of producing
+									through my company, Echo Films, and had the chance to work on
+									some exciting projects.
+								</p>
+								<p>
+									One of the films I'm particularly proud of is "Cake," which
+									brought me nominations for a Golden Globe and a Screen Actors
+									Guild Award. It was a different kind of role for me, and I
+									enjoyed the challenge.
+								</p>
+								<p>
+									Beyond the spotlight, I've tried to balance my career with a
+									bit of privacy. It's important to me to stay grounded and true
+									to myself in an industry that can sometimes be overwhelming.
+									Thanks for the support over the years, and I'm excited for
+									what's to come!
+								</p>
+								<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="FanCardSection" class="section">
+				<div id="fanCardAnnouncement" class="bounce">
+					<h1>Introducing Our Exclusive Fan Cards</h1>
+					<p>
+						At
+						<span id="jennifer" style="font-weight: 800"
+							>JENNIFER ANISTON FAN CLUB</span
+						>, we are thrilled to present our latest offering to our dedicated
+						fans – the Exclusive Fan Cards! These limited-edition cards are not
+						just a token of appreciation; they are your VIP pass to a world of
+						unique benefits and unforgettable experiences.
+					</p>
+
+					<h2>Why You Need Our Fan Card:</h2>
+					<ul>
+						<li>
+							<strong>Unrivaled Access:</strong> Gain exclusive access to
+							behind-the-scenes content, sneak peeks of upcoming releases, and
+							personal messages from
+							<span id="jennifer" style="font-weight: 800"
+								>JENNIFER ANISTON </span
+							>.
+						</li>
+						<li>
+							<strong>Collectible Artwork:</strong> Each Fan Card features
+							stunning, specially designed artwork that showcases the essence of
+							<span id="jennifer" style="font-weight: 800"
+								>JENNIFER ANISTON FAN CLUB</span
+							>. Collect them all and adorn your space with a gallery of
+							exclusive masterpieces.
+						</li>
+						<li>
+							<strong>Discounts and Perks:</strong> Enjoy special discounts on
+							merchandise, concert tickets, and other
+							<span id="jennifer" style="font-weight: 800"
+								>JENNIFER ANISTON
+							</span>
+							goodies. Your Fan Card is your golden ticket to savings and
+							exciting offers!
+						</li>
+						<li>
+							<strong style="color: black">Interactive Experiences:</strong>
+							Participate in live Q&A sessions, virtual meet-and-greets, and
+							exclusive online events reserved only for Fan Card holders.
+						</li>
+					</ul>
+
+					<h2>How to Purchase:</h2>
+					<ol>
+						<li>
+							<strong>Login or Sign Up:</strong> Visit our website and log in to
+							your fan account. If you're not a member yet, sign up to unlock a
+							world of exclusive content.
+						</li>
+						<li>
+							<strong>Fill the Form:</strong> Complete a simple form to
+							customize your Fan Card. Let us know your preferences, and we'll
+							tailor your experience to match your unique style.
+						</li>
+						<li>
+							<strong>Secure Payment:</strong> Once you've filled out the form,
+							proceed to the secure payment portal. Your Fan Card will be
+							reserved just for you upon successful completion.
+						</li>
+						<li>
+							<strong>Enjoy the Benefits:</strong>
+							Congratulations! You're now an official holder of an Exclusive Fan
+							Card. Get ready to dive into a world of unparalleled experiences
+							and exclusive privileges.
+						</li>
+					</ol>
+
+					<p>
+						Don't miss out on this opportunity to elevate your fan status.
+						Purchase your Exclusive Fan Card today and join us on an
+						extraordinary journey through the magic of music and connection!
+					</p>
+
+					<p>
+						Thank you for being a part of the
+						<span id="jennifer" style="font-weight: 1000"
+							>JENNIFER ANISTON FAN CLUB</span
+						>
+						family.
+					</p>
+				</div>
+
+				<div class="col-xl-12 col-md-6 col-sm-7">
+					<div class="row justify-content-center">
+						<div class="col-lg-12">
+							<div class="section-title section-title-2 text-center">
+								<h2
+									class="title fan-text"
+									style="color: black; font-weight: 1000"
+								>
+									FAN CARDS
+								</h2>
+							</div>
+						</div>
+					</div>
+					<div class="message-container">
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+							<div
+								class="message-wrap text-center"
+								onmouseover="startSwingAnimation(this)"
+								onmouseout="stopSwingAnimation(this)"
+							>
+								<h6 class="title">BRONZE</h6>
+								<ul>
+									<li>Exclusive Access</li>
+									<li>Special Events</li>
+									<li>Membership Rewards</li>
+									<li>Instant Updates</li>
+								</ul>
+								<p class="amount">Amount: $500</p>
+								<a
+									class="btn btn-border-2"
+									href="pages/cardPurchase.html"
+									onclick="showSignupSection()"
+									>Purchase Now</a
+								>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+							<div
+								class="message-wrap text-center"
+								onmouseover="startSwingAnimation(this)"
+								onmouseout="stopSwingAnimation(this)"
+							>
+								<h6 class="title">SILVER</h6>
+								<ul>
+									<li>Premium Content</li>
+									<li>Early Access</li>
+									<li>Exclusive Merchandise</li>
+									<li>Priority Support</li>
+								</ul>
+								<p class="amount">Amount: $1500</p>
+								<a class="btn btn-border-2" href="pages/cardPurchase.html"
+									>Purchase Now</a
+								>
+							</div>
+						</div>
+						<div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+							<div
+								class="message-wrap text-center"
+								onmouseover="startSwingAnimation(this)"
+								onmouseout="stopSwingAnimation(this)"
+							>
+								<h6 class="title">GOLD</h6>
+								<ul>
+									<li>Behind-the-Scenes</li>
+									<li>Virtual Meetups</li>
+									<li>Discounts & Coupons</li>
+									<li>Exclusive Downloads</li>
+								</ul>
+								<p class="amount">Amount: $3000</p>
+								<a class="btn btn-border-2" href="pages/cardPurchase.html"
+									>Purchase Now</a
+								>
+							</div>
+						</div>
+						<div class="col-lg-3 col-xl-3 col-md-6 col-sm-12">
+							<div
+								class="message-wrap text-center"
+								onmouseover="startSwingAnimation(this)"
+								onmouseout="stopSwingAnimation(this)"
+							>
+								<h6 class="title">PLATINUM</h6>
+								<ul>
+									<li>Ultimate Fan Experience</li>
+									<li>Personalized Gifts</li>
+									<li>Meet & Greet</li>
+									<li>Exclusive Access Pass</li>
+								</ul>
+								<p class="amount">Amount: $5000 - Unlimited</p>
+								<a class="btn btn-border-2" href="pages/cardPurchase.html"
+									>Purchase Now</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="fundraisers-section" class="section">
+				<div class="fundraiser-card">
+					<h1 class="join-us">Join Us. <br />Change Their World.</h1>
+
+					<h1 class="change-yours">
+						Change Yours. This Will Change<br />Everything.
+					</h1>
+					<a href="#" target="_blank" role="button" class="donation-btn">
+						<span class="donation-btn">
+							<span class="donation">DONATE NOW</span>
+						</span>
+					</a>
+				</div>
+				<div class="donation-btn-wrapper">
+					<h1 class="each-day">
+						Each day, an estimated 734 children <br />become orphans
+					</h1>
+					<h1 class="Aniston-life">
+						Aniston Life Foundation is a worldwide non-profit orphanage funding
+						organization that are dedicated to looking for the welfare of
+						abandoned children and orphans. We help orphans by providing health
+						and educational opportunities, stable housing and adoption services.
+						<br /><br />
+						With the help of our charity program for orphans, we’ve developed a
+						number of orphanages, infant adoption centers, and schools in
+						underserved parts of Philippines,India,Columbia and Africa with
+						proper learning resources and tools.
+						<br /><br />
+						Help us donate to orphans and improve their living situations.<br /><br />For
+						further information on how to Donate
+						<a href="pages/login.html" target="_blank">click here</a>
+					</h1>
+				</div>
+			</section>
+		</main>
+
+		<footer class="main-footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-2">
+						<div class="lolavie-logo lolavie-logo-desk">
+							<a href="/">
+								<span class="haircare">Jennifer Aniston</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-7 col-md-12">
+						<div class="nav-footer">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="#contact-us">CONTACT US</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#about">ABOUT</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="/pages/privacy-policy"
+										>PRIVACY POLICY</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>COPYRIGHT 2024 LOLAVIE</p>
+		</footer>
+
+		<script src="/scripts/index.js"></script>
+		<script src="/scripts/scroll-fade.js"></script>
+	</body>
+</html>

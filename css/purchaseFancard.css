@@ -1,0 +1,129 @@
+#purchase-form {
+	max-width: 500px;
+	margin: 20px auto;
+	margin-top: 10rem;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: -20rem;
+	box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#purchase-form h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.crypto-images {
+	width: 100px;
+}
+
+#purchase-card-form label {
+	display: inline;
+	margin-bottom: 5px;
+	font-weight: 700;
+}
+
+#copy-button {
+	background: transparent;
+	width: 30px;
+	margin-left: -0.5rem;
+	margin-top: -0.5rem;
+}
+
+#purchase-card-form input,
+#purchase-card-form select {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	border: none;
+	border-bottom: 1px solid black;
+}
+
+#purchase-card-form button {
+	background-color: #000000;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	width: 100%; /* Full width on small screens */
+}
+
+#purchase-card-form button:hover {
+	background-color: #161616;
+}
+
+/* Responsive styles */
+@media only screen and (min-width: 600px) {
+	#purchase-form {
+		padding: 40px;
+	}
+
+	#copy-button {
+		width: 100px;
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	#purchase-card-form button {
+		width: auto;
+	}
+}
+
+/* Confirmation container style */
+/* Confirmation container style */
+#confirmation-container {
+	max-width: 500px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	background: url("/Assets/fanSectionbg.png");
+	color: #ffffff;
+	font-weight: 500;
+	margin: 0 auto; /* Center the container */
+}
+
+/* Table-like layout for confirmation details */
+#confirmation-container h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#confirmation-container p {
+	margin: 10px 0;
+}
+
+#confirmation-container button {
+	background-color: #000;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 20px;
+	width: 100%;
+}
+
+#confirmation-container button:hover {
+	background-color: #161616;
+}
+.hidden {
+	display: none;
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 758px) {
+	#confirmation-container {
+		padding: 10px;
+		overflow-x: scroll;
+	}
+
+	#confirmation-container button {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#confirmation-container {
+		max-width: 100%;
+	}
+}

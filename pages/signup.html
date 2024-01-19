@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Create Account</title>
+		<link rel="stylesheet" href="/css/index.css" />
+		<link rel="stylesheet" href="/css/about.css" />
+		<link rel="stylesheet" href="/css/header-text.css" />
+		<link rel="stylesheet" href="/css/fancard.css" />
+		<link rel="stylesheet" href="/css/fundraiser.css" />
+		<link rel="stylesheet" href="/css/signup.css" />
+		<link rel="stylesheet" href="/css/contact.css" />
+		<link rel="stylesheet" href="/css/footer.css" />
+	</head>
+	<body>
+		<header>
+			<h1 id="header-text">Jennifer Aniston Fan Club</h1>
+			<nav id="desktop-nav">
+				<div class="logo">
+					<img src="/Assets/menu-logo.jpeg" alt="menu-logo" id="logo" />
+				</div>
+				<div class="nav-links">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li>
+							<a href="#FanCardSection">Fan Cards</a>
+						</li>
+						<li>
+							<a href="#fundraisers-section">Fundraisers</a>
+						</li>
+						<li>
+							<a href="#contact-us" id="contactLink">Contact</a>
+						</li>
+
+						<li><a href="signup.html" id="signupLink">Signup</a></li>
+						<li><a href="login.html" id="loginLink">Login</a></li>
+					</ul>
+				</div>
+			</nav>
+			<nav id="hamburger-nav">
+				<div class="logo">
+					<img src="/Assets/menu-logo.jpeg" alt="menu-logo" id="logo" />
+				</div>
+				<div class="hamburger-menu">
+					<div class="hamburger-icon" onclick="toggleMenu()">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<ul class="menu-links">
+						<li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+						<li><a href="#about" onclick="toggleMenu()">About</a></li>
+						<li>
+							<a href="#FanCardSection" onclick="toggleMenu()">Fan Cards</a>
+						</li>
+						<li>
+							<a href="#fundraisers-section" onclick="toggleMenu()"
+								>Fundraisers</a
+							>
+						</li>
+						<li>
+							<a href="#contact-us" id="contactLink" onclick="toggleMenu() "
+								>Contact</a
+							>
+						</li>
+
+						<li>
+							<a
+								href="#signup-login"
+								id="signupLink"
+								onclick="toggleMenu(),toggleLoginSection()"
+								>Signup</a
+							>
+						</li>
+						<li>
+							<a
+								href="login.html"
+								id="loginLink"
+								onclick="toggleMenu(),toggleLoginSection()"
+								>Login</a
+							>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<section id="signup-login">
+			<div class="signup-form">
+				<h2>Create Account</h2>
+				<form id="signupForm">
+					<label for="firstName">First Name:</label>
+					<input type="text" id="firstName" name="firstName" required />
+
+					<label for="lastName">Last Name:</label>
+					<input type="text" id="lastName" name="lastName" required />
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required />
+
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="password" required />
+
+					<label for="confirmPassword">Confirm Password:</label>
+					<input
+						type="password"
+						id="confirmPassword"
+						name="confirmPassword"
+						required
+					/>
+
+					<button type="submit">Sign Up</button>
+				</form>
+			</div>
+		</section>
+		<footer class="main-footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-2">
+						<div class="lolavie-logo lolavie-logo-desk">
+							<a href="/">
+								<span class="haircare">Jennifer Aniston</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-7 col-md-12">
+						<div class="nav-footer">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="#contact-us">CONTACT US</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#about">ABOUT</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="/pages/privacy-policy"
+										>PRIVACY POLICY</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>COPYRIGHT 2024 LOLAVIE</p>
+		</footer>
+
+		<script src="scripts/login.js"></script>
+	</body>
+</html>

@@ -1,0 +1,158 @@
+/* Login Form Styling */
+.login-form {
+	width: 30%;
+	padding: 20px;
+	border: 1px solid #e6e0e0;
+	border-radius: 5px;
+	background: url("/Assets/fundraiser.webp");
+	background-color: #fff;
+	color: white;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+	margin-top: 8rem; /* Adjust as needed */
+	margin-left: auto; /* Center horizontally */
+	margin-right: auto; /* Center horizontally */
+	margin-bottom: 10rem;
+}
+.login-form p {
+	color: white;
+}
+
+#forgotPasswordForm {
+	display: none;
+}
+.successfull-recovery-message {
+	display: none;
+}
+.login-form h2 {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-family: Montserrat-Medium;
+	letter-spacing: 2.4px;
+	color: white;
+}
+
+.login-form label {
+	display: block;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+	color: #999;
+	font-size: 12px;
+	font-family: Montserrat-Light;
+}
+
+.login-form input {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-bottom: 1px solid #757575;
+	font-size: 18px;
+	font-family: Montserrat-Light;
+	margin-bottom: 20px;
+}
+
+.login-form button {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 2rem;
+	padding-bottom: 25px;
+	background-color: #000;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 30px;
+	font-family: Montserrat-Medium;
+	transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+	background-color: #333;
+}
+
+@media (max-width: 768px) {
+	.signup-form,
+	.login-form {
+		width: 100%;
+		padding: 20px;
+		border: 1px solid #e6e0e0;
+		border-radius: 5px;
+		background-color: #fff;
+		box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+		margin: 20px 0;
+	}
+
+	.login-form {
+		margin-top: 0;
+		margin-left: auto; /* Center horizontally */
+		margin-right: auto; /* Center horizontally */
+		margin-bottom: 0;
+	}
+
+	.login-form h2 {
+		margin-bottom: 20px;
+		text-transform: uppercase;
+		font-size: 24px;
+		font-family: Montserrat-Medium;
+		letter-spacing: 2.4px;
+	}
+
+	.login-form label {
+		display: block;
+		margin-bottom: 8px;
+		text-transform: uppercase;
+		color: #999;
+		font-size: 12px;
+		font-family: Montserrat-Light;
+	}
+
+	.login-form input {
+		width: 100%;
+		padding: 10px;
+		border: none;
+		border-bottom: 1px solid #757575;
+		font-size: 18px;
+		font-family: Montserrat-Light;
+		margin-bottom: 20px;
+	}
+
+	.login-form button {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 2rem;
+		padding-bottom: 25px;
+		background-color: #000;
+		color: #fff;
+		border: none;
+		border-radius: 3px;
+		cursor: pointer;
+		font-size: 30px;
+		font-family: Montserrat-Medium;
+		transition: background 0.3s ease;
+	}
+
+	.login-form button:hover {
+		background-color: #333;
+	}
+}
+@media (max-width: 768px) {
+	.login-form {
+		width: 70%; /* Adjust the width as needed for smaller screens */
+		margin-top: 10rem; /* Adjust as needed */
+		margin-bottom: 4rem; /* Adjust as needed */
+	}
+	.login-form button {
+		width: 50%;
+		padding: 3px;
+		margin-bottom: 2rem;
+		padding-bottom: 15px;
+		background-color: #000;
+		color: #fff;
+		border: none;
+		border-radius: 3px;
+		cursor: pointer;
+		font-size: 30px;
+		font-family: Montserrat-Medium;
+		transition: background 0.3s ease;
+	}
+}

@@ -1,0 +1,185 @@
+.main-footer {
+	background-color: #000;
+	color: #fff;
+	padding: 0 30px;
+	position: relative;
+	z-index: 10;
+	border-top: 1px solid #2d2d2d;
+}
+
+footer {
+}
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.main-footer .lolavie-logo {
+	display: flex;
+	justify-content: flex-start;
+	width: 155px;
+	padding: 60px 15px 60px 0;
+	text-align: center;
+}
+.main-footer a {
+	color: #007bff;
+	text-decoration: none;
+	background-color: transparent;
+}
+.main-footer .lolavie-logo img {
+	width: 100%;
+}
+.main-footer img {
+	vertical-align: middle;
+	border-style: none;
+}
+.main-footer span.haircare {
+	font-size: 14px;
+	font-family: Montserrat-Light;
+	margin: 7px 0 0;
+	display: inline-block;
+	width: 100%;
+	color: #fff;
+	text-decoration: none;
+	text-align: left;
+}
+.main-footer .nav-footer {
+	width: 40rem;
+	padding: 50px 15px;
+	display: flex;
+	justify-content: space-around;
+	border-left: 1px solid #2d2d2d;
+	border-right: 1px solid #2d2d2d;
+	height: 100%;
+}
+.col-lg-2 {
+	width: 10rem;
+}
+.navbar-nav {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+.main-footer .nav-footer .navbar-nav .nav-item a {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-family: Montserrat-Light;
+	letter-spacing: 2.6px;
+}
+.navbar-nav .nav-link {
+	padding-right: 0;
+	padding-left: 0;
+}
+.nav-link {
+	display: block;
+	padding: 0.5rem 1rem;
+}
+.main-footer .social-content {
+	padding: 50px 45px 10px;
+	display: flex;
+	justify-content: center;
+}
+.main-footer .social-content .join-our {
+	position: relative;
+}
+.main-footer .social-content .join-our .joint-us-email {
+	margin-top: 15px;
+}
+.klavio-hidden-form,
+.joint-us-email .content-message-success {
+	display: none;
+}
+.main-footer
+	.social-content
+	.join-our
+	.joint-us-email
+	.content-message-success
+	p {
+	font-size: 13px;
+	color: green;
+}
+.main-footer p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+.main-footer .social-content .social-media {
+	margin-top: 30px;
+	float: right;
+	width: 100%;
+}
+.main-footer .social-content .social-media ul {
+	padding-left: 0;
+	margin-bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.main-footer .social-content .social-media ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+.fab,
+.far {
+	font-weight: 400;
+}
+.fab {
+	font-family: "Font Awesome 5 Brands";
+}
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+}
+.fa-facebook-f {
+	filter: grayscale(100%);
+	width: 100px;
+}
+@media only screen and (max-width: 768px) {
+	.main-footer .nav-footer,
+	.main-footer .social-content {
+		flex-direction: column; /* Stack items vertically on smaller screens */
+		text-align: center; /* Center text for smaller screens */
+	}
+	.footer {
+		height: 5rem;
+		margin-bottom: -100rem;
+	}
+	.nav-footer {
+		margin-left: -8rem;
+		margin-top: -7rem;
+	}
+
+	.main-footer .nav-footer .navbar-nav .nav-item {
+		margin: 10px 0; /* Adjust spacing between nav items on smaller screens */
+	}
+}

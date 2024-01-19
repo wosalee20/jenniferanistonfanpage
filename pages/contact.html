@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="/css/contact.css" />
+		<link rel="stylesheet" href="/css/index.css" />
+		<link rel="stylesheet" href="/css/about.css" />
+		<link rel="stylesheet" href="/css/header-text.css" />
+		<link rel="stylesheet" href="/css/fancard.css" />
+		<link rel="stylesheet" href="/css/fundraiser.css" />
+		<link rel="stylesheet" href="/css/signup.css" />
+
+		<link rel="stylesheet" href="/css/footer.css" />
+	</head>
+	<body>
+		<section class="contact-message-area bg-grey-2 pd-top-96 pd-bottom-100">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-9">
+						<div class="section-title text-center">
+							<h2 class="title">Send Us A Message</h2>
+							<p></p>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-12">
+						<div class="contact-form">
+							<script language="javascript">
+								function checkform() {
+									if (document.mainform.name.value == "") {
+										alert("Please type your full name!");
+										document.mainform.name.focus();
+										return false;
+									}
+									if (document.mainform.email.value == "") {
+										alert("Please enter your e-mail address!");
+										document.mainform.email.focus();
+										return false;
+									}
+									if (document.mainform.message.value == "") {
+										alert("Please type your message!");
+										document.mainform.message.focus();
+										return false;
+									}
+									return true;
+								}
+							</script>
+
+							<form method="post" name="mainform" onsubmit="return checkform()">
+								<input
+									type="hidden"
+									name="form_id"
+									value="17055925904080"
+								/><input
+									type="hidden"
+									name="form_token"
+									value="a1d5e6e38d81078bcf9418b2377be645"
+								/><input
+									type="hidden"
+									name="form_id"
+									value="16343101044841"
+								/><input
+									type="hidden"
+									name="form_token"
+									value="64f1bcfd2ace83a30d206821efa755b4"
+								/>
+								<input type="hidden" name="a" value="support" />
+								<input type="hidden" name="action" value="send" />
+
+								<div class="row">
+									<div class="col-md-6 col-12">
+										<div class="single-input-wrap style-2 input-group">
+											<input
+												type="text"
+												class="form-control"
+												name="name"
+												placeholder="Your Name"
+											/>
+										</div>
+									</div>
+									<div class="col-md-6 col-12">
+										<div class="single-input-wrap style-2 input-group">
+											<input
+												type="text"
+												class="form-control"
+												name="email"
+												placeholder="Your Email"
+											/>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="single-input-wrap style-2 input-group mb-0">
+											<div class="input-group-prepend">
+												<div class="input-group-text">
+													<img src="assets/img/contact/icon.png" alt="img" />
+												</div>
+											</div>
+											<textarea
+												class="form-control"
+												rows="4"
+												name="note"
+												placeholder="Type Your Message..."
+											></textarea>
+										</div>
+										<div class="submit-area text-center">
+											<button type="submit" class="btn btn-pink">
+												SEND MESSAGE <i class="la la-arrow-right"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="main-footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-2">
+						<div class="lolavie-logo lolavie-logo-desk">
+							<a href="/">
+								<span class="haircare">Jennifer Aniston</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-7 col-md-12">
+						<div class="nav-footer">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="#contact-us">CONTACT US</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#about">ABOUT</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="/pages/privacy-policy"
+										>PRIVACY POLICY</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>COPYRIGHT 2024 LOLAVIE</p>
+		</footer>
+	</body>
+</html>

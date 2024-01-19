@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="/css/purchaseFancard.css" />
+		<link rel="stylesheet" href="/css/index.css" />
+		<link rel="stylesheet" href="/css/about.css" />
+		<link rel="stylesheet" href="/css/header-text.css" />
+		<link rel="stylesheet" href="/css/fancard.css" />
+		<link rel="stylesheet" href="/css/fundraiser.css" />
+		<link rel="stylesheet" href="/css/signup.css" />
+
+		<link rel="stylesheet" href="/css/footer.css" />
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+		></script>
+	</head>
+	<body>
+		<header>
+			<h1 id="header-text">Jennifer Aniston Fan Club</h1>
+			<nav id="desktop-nav">
+				<div class="logo">
+					<img src="/Assets/menu-logo.jpeg" alt="menu-logo" id="logo" />
+				</div>
+				<div class="nav-links">
+					<ul>
+						<li><a href="/index.html">Home</a></li>
+						<li><a href="/index.html#about">About</a></li>
+						<li>
+							<a href="/index.html#FanCardSection">Fan Cards</a>
+						</li>
+						<li>
+							<a href="/index.html#fundraisers-section">Fundraisers</a>
+						</li>
+						<li>
+							<a href="contact.html" id="contactLink">Contact</a>
+						</li>
+
+						<li><a href="signup.html" id="signupLink">Signup</a></li>
+						<li><a href="login.html" id="loginLink">Login</a></li>
+					</ul>
+				</div>
+			</nav>
+			<nav id="hamburger-nav">
+				<div class="logo">
+					<img src="/Assets/menu-logo.jpeg" alt="menu-logo" id="logo" />
+				</div>
+				<div class="hamburger-menu">
+					<div class="hamburger-icon" onclick="toggleMenu()">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<ul class="menu-links">
+						<li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+						<li><a href="#about" onclick="toggleMenu()">About</a></li>
+						<li>
+							<a href="#FanCardSection" onclick="toggleMenu()">Fan Cards</a>
+						</li>
+						<li>
+							<a href="#fundraisers-section" onclick="toggleMenu()"
+								>Fundraisers</a
+							>
+						</li>
+						<li>
+							<a href="#contact-us" id="contactLink" onclick="toggleMenu() "
+								>Contact</a
+							>
+						</li>
+
+						<li>
+							<a
+								href="#signup-login"
+								id="signupLink"
+								onclick="toggleMenu(),toggleLoginSection()"
+								>Signup</a
+							>
+						</li>
+						<li>
+							<a
+								href="#signup-login"
+								id="loginLink"
+								onclick="toggleMenu(),toggleLoginSection()"
+								>Login</a
+							>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section id="purchase-form">
+				<div id="purchase-card">
+					<h2>Purchase Fan Card</h2>
+					<form id="purchase-card-form" name="mainform">
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name" required />
+
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required />
+
+						<label for="card-type">Card Type:</label>
+						<select
+							id="card-type"
+							name="card-type"
+							onchange="calculateAmount()"
+						>
+							<option value="bronze">Bronze</option>
+							<option value="silver">Silver</option>
+							<option value="gold">Gold</option>
+							<option value="platinum">Platinum</option>
+						</select>
+
+						<label for="amount">Amount:</label>
+						<input type="text" id="amount" name="amount" readonly />
+
+						<label for="payment-method">Payment Method:</label>
+						<select
+							id="payment-method"
+							name="payment-method"
+							onchange="handlePaymentMethodChange()"
+						>
+							<option value="paypal">PayPal</option>
+							<option value="gift-card">Gift Card</option>
+							<option value="cryptocurrency">Cryptocurrency</option>
+						</select>
+						<!-- Add this section for gift cards within the #crypto-details div -->
+						<div id="gift-card-details" style="display: none">
+							<label for="gift-card-type">Gift Card Type:</label>
+							<select id="gift-card-type" name="gift-card-type">
+								<option value="amazon">Amazon Gift Card</option>
+								<option value="walmart">Walmart Gift Card</option>
+								<option value="netflix">Netflix Gift Card</option>
+								<option value="itunes">iTunes Gift Card</option>
+								<option value="google-play">Google Play Gift Card</option>
+								<!-- Add more gift card options as needed -->
+							</select>
+
+							<label for="card-id">Card ID:</label>
+							<input type="text" id="gift-card-id" name="card-id" />
+
+							<label for="gift-card-image">Gift Card Image:</label>
+							<input
+								type="file"
+								id="gift-card-image"
+								name="gift-card-image"
+								accept="image/*"
+							/>
+						</div>
+
+						<div id="crypto-details" style="display: none">
+							<label for="crypto-type">Cryptocurrency Type:</label>
+							<select id="crypto-type" name="crypto-type">
+								<option
+									value="bitcoin"
+									data-wallet-address="bc1q84kzvx9lmphlwskmv56slkldxc2qmsqhv8plya"
+								>
+									Bitcoin
+								</option>
+								<option
+									value="ethereum"
+									data-wallet-address="0xA7c39c8a6DB5396FA9a049089Ad48F2d088624Fb"
+								>
+									Ethereum
+								</option>
+								<option
+									value="BNB"
+									data-wallet-address="0xA7c39c8a6DB5396FA9a049089Ad48F2d088624Fb"
+								>
+									BNB
+								</option>
+								<!-- Add more cryptocurrency options as needed -->
+							</select>
+
+							<div id="crypto-images"></div>
+							<p>scan to send!</p>
+
+							<label for="wallet-address">Wallet Address:</label>
+							<input
+								type="text"
+								id="wallet-address"
+								name="wallet-address"
+								readonly
+							/>
+
+							<img
+								src="/Assets/paste.png"
+								alt="copy-clipboard"
+								id="copy-button"
+							/>
+							<div id="copy-message" style="display: none">Copied!</div>
+						</div>
+
+						<button type="button" id="confirm" onclick="confirmPayment()">
+							Confirm Payment
+						</button>
+					</form>
+				</div>
+				<div id="confirmation-container"></div>
+				<div id="success-message" class="hidden"></div>
+			</section>
+		</main>
+		<footer class="main-footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-2">
+						<div class="lolavie-logo lolavie-logo-desk">
+							<a href="/">
+								<span class="haircare">Jennifer Aniston</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-7 col-md-12">
+						<div class="nav-footer">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="#contact-us">CONTACT US</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#about">ABOUT</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="/pages/privacy-policy"
+										>PRIVACY POLICY</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>COPYRIGHT 2024 LOLAVIE</p>
+		</footer>
+
+		<script src="/scripts/purchaseFancard.js"></script>
+	</body>
+</html>
