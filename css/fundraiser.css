@@ -8,7 +8,7 @@
 	--line-height30: 1.7;
 }
 #fundraisers-section {
-	background-image: url("/Assets/bg.png");
+	background-image: url("../Assets/bg.png");
 	background-color: #ffffff;
 	background-position: -17px -3px;
 	background-repeat: no-repeat;
@@ -78,7 +78,7 @@
 	width: 100%;
 }
 .fundraiser-card {
-	background-image: url("/Assets/fundraiser.webp");
+	background-image: url("../Assets/fundraiser.webp");
 	background-position: -17px -3px;
 	background-repeat: no-repeat;
 	background-size: cover;
