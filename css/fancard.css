@@ -542,7 +542,7 @@ button:focus {
 .message-wrap:after {
 	content: "";
 	position: absolute;
-	background: url(/Assets/round.png);
+	background: url(../Assets/round.png);
 	width: 163px;
 	height: 163px;
 	right: -8rem;
